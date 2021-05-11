@@ -1,0 +1,91 @@
+Case 1 : Output for ArrayIndexOutOfBoundsException
+ 
+WELCOME TO THE APPLICATION!!!
+
+Enter maximum size of array : 2
+
+Enter number of Dividend-divisor pairs to be added in array(less than maximum size of array) : 3
+
+Enter the Dividend(integer) : 8
+Enter the divisor(integer) : 2
+Division answer : 4.0
+
+Enter the Dividend(integer) : 9
+Enter the divisor(integer) : 3
+Division answer : 3.0
+
+
+Array size exceeded.Number of elements can't exceed the maximum size of array.The error is :java.lang.ArrayIndexOutOfBoundsException
+
+Oops!
+Application ended due to invalid input given by user.
+
+
+
+Case 2 : Output for Number Format Exception
+
+WELCOME TO THE APPLICATION!!!
+
+Enter maximum size of array : 2
+
+Enter number of Dividend-divisor pairs to be added in array(less than maximum size of array) : 1
+
+Enter the Dividend(integer) : 2.1
+
+PLease enter integers.Dividend and divisor have to be integers.The error is :java.lang.NumberFormatException
+
+Oops!
+Application ended due to invalid input given by user.
+
+
+WELCOME TO THE APPLICATION!!!
+
+Enter maximum size of array : 2
+
+Enter number of Dividend-divisor pairs to be added in array(less than maximum size of array) : 1
+
+Enter the Dividend(integer) : 3
+Enter the divisor(integer) : 1.2
+
+PLease enter integers.Dividend and divisor have to be integers.The error is :java.lang.NumberFormatException
+
+Oops!
+Application ended due to invalid input given by user.
+ 
+ 
+ 
+Case 3 : Output for Arithmetic Exception
+
+WELCOME TO THE APPLICATION!!!
+
+Enter maximum size of array : 2
+
+Enter number of Dividend-divisor pairs to be added in array(less than maximum size of array) : 1
+
+Enter the Dividend(integer) : 5
+Enter the divisor(integer) : 0
+
+Please enter correct divisor. Divisor can't be zero.The error is :java.lang.ArithmeticException
+
+Oops!
+Application ended due to invalid input given by user.
+
+
+
+Case 4 : Output with no exceptions
+
+WELCOME TO THE APPLICATION!!!
+
+Enter maximum size of array : 3
+
+Enter number of Dividend-divisor pairs to be added in array(less than maximum size of array) : 2
+
+Enter the Dividend(integer) : 45
+Enter the divisor(integer) : 9
+Division answer : 5.0
+
+Enter the Dividend(integer) : 6
+Enter the divisor(integer) : 3
+Division answer : 2.0
+
+Thank you. Application ended.

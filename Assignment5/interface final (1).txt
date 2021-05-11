@@ -1,0 +1,292 @@
+package abhishekkkkk;
+import java.util.*;
+
+interface vehicle{
+	public void gear_change(int v);
+	public void speed_up();
+	public void apply_brakes();
+	
+}
+
+class bicycle implements vehicle{
+	
+	public static int gear=1, speed=0;
+	int maxg = 12, maxs = 48;
+	public void gear_change(int v) {
+		if(gear==maxg && v==1) {
+			System.out.println("Maximum gear reached : "+gear+"");
+			return;
+		}
+		if(gear==1 && v==-1) {
+			System.out.println("Minimum gear reached : "+gear+"");
+			return;
+		}
+		if (v==1) {
+			gear=gear+1;
+			System.out.println("Gear up, gear is now on "+gear+"");
+		}
+		if (v==-1) {
+			gear=gear-1;
+			System.out.println("Gear down, gear is now on "+gear+"");
+		}
+	}
+	
+	public void speed_up() {
+		if (speed==maxs) {
+			System.out.println("Maximum speed reached : "+speed+"");
+			return;
+		}
+		speed = speed + 1;
+		if (speed>=(gear*4)) {
+			System.out.println("Increase gear to increase speed, current speed : "+(gear*4)+" Km/hr");
+			speed = gear*4;
+			return;
+		}
+		System.out.println("Speed increased, speed is now "+speed+" Km/hr");
+	}
+	
+	public void apply_brakes() {
+		speed = 0;
+		System.out.println("Brakes applied, speed is now 0");
+	}
+	
+}
+
+class bike implements vehicle{
+	
+	public static int gear=1, speed=0;
+	int maxg = 4, maxs = 64;
+	public void gear_change(int v) {
+		if(gear==maxg && v==1) {
+			System.out.println("Maximum gear reached : "+gear+"");
+			return;
+		}
+		else if(gear==1 && v==-1) {
+			System.out.println("Minimum gear reached : "+gear+"");
+			return;
+		}
+		else if (v==1) {
+			gear=gear+1;
+			System.out.println("Gear up, gear is now on "+gear+"");
+		}
+		else if (v==-1) {
+			gear=gear-1;
+			System.out.println("Gear down, gear is now on "+gear+"");
+		}
+	}
+	
+	public void speed_up() {
+		if (speed==maxs) {
+			System.out.println("Maximum speed reached : "+speed+"");
+			return;
+		}
+		speed = speed + 4;
+		if (speed>=(gear*16)) {
+			System.out.println("Increase gear to increase speed, current speed : "+(gear*16)+" Km/hr");
+			speed = gear*16;
+			return;
+		}
+		System.out.println("Speed increased, speed is now "+speed+" Km/hr");
+	}
+	
+	public void apply_brakes() {
+		speed = 0;
+		System.out.println("Brakes applied, speed is now 0");
+	}
+}
+
+class car implements vehicle{
+	
+	public static int gear=1, speed=0;
+	int maxg = 6, maxs = 120;
+	public void gear_change(int v) {
+		if(gear==maxg && v==1) {
+			System.out.println("Maximum gear reached : "+gear+"");
+			return;
+		}
+		else if((gear==1 && v==-1) || (gear==0 && v==-1)) {
+			System.out.println("Car is now in reverse");
+			gear=0;
+			return;
+		}
+		else if (v==1) {
+			gear=gear+1;
+			System.out.println("Gear up, gear is now on "+gear+"");
+		}
+		else if (v==-1) {
+			gear=gear-1;
+			System.out.println("Gear down, gear is now on "+gear+"");
+		}
+	}
+	
+	public void speed_up() {
+		if (speed==maxs) {
+			System.out.println("Maximum speed reached : "+speed+"");
+			return;
+		}
+		speed = speed + 4;
+		if (speed>=(gear*20)) {
+			System.out.println("Increase gear to increase speed, current speed : "+(gear*20)+" Km/hr");
+			speed = gear*20;
+			return;
+		}
+		System.out.println("Speed increased, speed is now "+speed+" Km/hr");
+	}
+	
+	public void apply_brakes() {
+		speed = 0;
+		System.out.println("Brakes applied, speed is now 0");
+	}
+}
+
+public class vehicles {
+	public static void main(String[] args) {
+		int ch = 0;
+		Scanner s = new Scanner(System.in);
+		while (ch!=4) {
+			
+			System.out.println("1  bicycle");
+			System.out.println("2  bike");
+			System.out.println("3  car");
+			System.out.println("4 quit");
+			System.out.println("Enter your choice : ");
+			ch = s.nextInt();
+			switch(ch) {
+				
+				case(1):{
+					bicycle x = new bicycle();
+					System.out.println("You are now riding a bicycle");
+					System.out.println("Controls : ");
+					System.out.println("enter 1 to accelarate ");
+					System.out.println("enter 2 to apply brakes ");
+					System.out.println("enter 3 to change down gear ");
+					System.out.println("enter 4 to change up gear ");
+					System.out.println("enter 5 to stop riding ");
+				
+					
+					int chh = 0,choice=0;
+					while (chh!=1) {
+						choice= s.nextInt();
+						switch(choice) {
+							
+							case 1:{
+								x.speed_up();
+								break;
+							}
+							
+							
+							case 2:{
+								x.apply_brakes();
+								break;
+							}
+							
+							case 3:{
+								x.gear_change(-1);
+								break;
+							}
+							case 4:{
+								x.gear_change(1);
+								break;
+							}
+							case 5:{
+								chh=1;
+								break;
+							}
+						}
+					}
+					
+					break;
+				}
+				
+				case(2):{
+					bike x = new bike();
+					System.out.println("You are now riding a bike");
+					System.out.println("Controls : ");
+					System.out.println("enter 1 to accelarate ");
+					System.out.println("enter 2 to apply brakes ");
+					System.out.println("enter 3 to change down gear ");
+					System.out.println("enter 4 to change up gear ");
+					System.out.println("enter 5 to stop riding ");
+					
+					int chh = 0,choice=0;
+					while (chh!=1) {
+						choice = s.nextInt();
+						switch(choice) {
+							
+							case 1:{
+								x.speed_up();
+								break;
+							}
+							
+							case 2:{
+								x.apply_brakes();
+								break;
+							}
+							
+							case 3:{
+								x.gear_change(-1);
+								break;
+							}
+							
+							case 4:{
+								x.gear_change(1);
+								break;
+							}
+							
+							case 5:{
+								chh=1;
+								break;
+							}
+						}
+					}
+					break;
+				}
+			
+				case(3):{
+					car x = new car();
+					System.out.println("You are now riding a car");
+					System.out.println("Controls : ");
+					System.out.println("enter 1 to accelarate ");
+					System.out.println("enter 2 to apply brakes ");
+					System.out.println("enter 3 to change down gear ");
+					System.out.println("enter 4 to change up gear ");
+					System.out.println("enter 5 to stop riding ");
+					
+					int chh = 0,choice=0;
+					while (chh!=1) {
+						choice = s.nextInt();
+						switch(choice) {
+							
+							case 1:{
+								x.speed_up();
+								break;
+							}
+							
+							
+							case 2:{
+								x.apply_brakes();
+								break;
+							}
+							
+							case 3:{
+								x.gear_change(-1);
+								break;
+							}
+							case 4:{
+								x.gear_change(1);
+								break;
+							}
+							
+							case 5:{
+								chh=1;
+								break;
+							}
+						}
+					}
+					break;
+				}
+				
+			}
+		}
+	}
+}

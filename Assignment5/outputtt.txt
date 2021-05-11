@@ -1,0 +1,72 @@
+1  bicycle
+2  bike
+3  car
+4 quit
+Enter your choice : 
+1
+You are now riding a bicycle
+Controls : 
+enter 1 to accelarate 
+enter 2 to apply brakes 
+enter 3 to change down gear 
+enter 4 to change up gear 
+enter 5 to stop riding 
+1
+Speed increased, speed is now 1 Km/hr
+2
+Brakes applied, speed is now 0
+3
+Minimum gear reached : 1
+4
+Gear up, gear is now on 2
+5
+1  bicycle
+2  bike
+3  car
+4 quit
+Enter your choice : 
+2
+You are now riding a bike
+Controls : 
+enter 1 to accelarate 
+enter 2 to apply brakes 
+enter 3 to change down gear 
+enter 4 to change up gear 
+enter 5 to stop riding 
+1
+Speed increased, speed is now 4 Km/hr
+2
+Brakes applied, speed is now 0
+3
+Minimum gear reached : 1
+4
+Gear up, gear is now on 2
+5
+1  bicycle
+2  bike
+3  car
+4 quit
+Enter your choice : 
+3
+You are now riding a car
+Controls : 
+enter 1 to accelarate 
+enter 2 to apply brakes 
+enter 3 to change down gear 
+enter 4 to change up gear 
+enter 5 to stop riding 
+1
+Speed increased, speed is now 4 Km/hr
+2
+Brakes applied, speed is now 0
+3
+Car is now in reverse
+4
+Gear up, gear is now on 1
+5
+1  bicycle
+2  bike
+3  car
+4 quit
+Enter your choice : 
+4

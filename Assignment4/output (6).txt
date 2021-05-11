@@ -1,0 +1,35 @@
+Enter your choice:
+Press: 
+1 for Triangle class 
+2 for Rectangle class 
+3 To exit
+1
+Enter value of base:
+6
+Enter value of height:
+10
+Base of triangle is: 6.0
+Height of triangle is: 10.0
+Area of triangle is: 30.0 sq units
+
+Enter your choice:
+Press: 
+1 for Triangle class 
+2 for Rectangle class 
+3 To exit
+2
+Enter length of first side:
+100
+Enter length of second side:
+20
+First side of rectangle is : 100.0
+Second side of rectangle is : 20.0
+Area of rectangle is: 2000.0 sq units
+
+Enter your choice:
+Press: 
+1 for Triangle class 
+2 for Rectangle class 
+3 To exit
+3
+Exiting from the application...

@@ -1,0 +1,216 @@
+
+//Abhishek Dhar
+//SE-10
+//23201
+//E-10
+//Title:Template Assignment
+//Objectives:To learn concept of templates and generic programming
+/*Aim:Implement a generic program using any collection class to count 
+     number of elements in collection that have specific property such as even 
+     numbers,odd numbers,prime numbers,palindromes.*/
+
+
+package assignment_7;
+import java.util.*;//importing this for using scanner class
+
+class template<T> {//template class
+
+    void palindrome(String[] s) {//fuction definition for palindrome
+        StringBuilder sb = new StringBuilder();
+        for (int i=0;i<s.length;i++) {
+            sb.append(s[i]);//appending
+        }
+        String str=sb.toString();
+        sb.reverse();//reverseing string
+        String rev=sb.toString();
+
+        if(str.equals(rev)){
+            System.out.println("palindrome string");
+        }else {
+            System.out.println("non palindrome string");
+        }
+    }
+
+    void check_odd_even(int[] no_to_check) {//fuction definition for checking no is odd or even
+        int count1 = 0;
+        for (int i = 0; i < no_to_check.length; i++) {
+            if (no_to_check[i] % 2 == 0) {//if no is even then this statement is true
+                System.out.println(no_to_check[i] + " is even");
+                count1++;
+            } else {//otherwise flow goes to this block
+                System.out.println(no_to_check[i] + " is odd");
+            }
+        }
+        System.out.println("There are " + count1 + " even numbers");
+        System.out.println("There are " + (no_to_check.length - count1) + " odd numbers");
+    }
+
+    void check_prime(int[] no_to_check) {//fuction definition for checking no is prime or not
+
+        int count2 = 0;
+        for (int j = 0; j < no_to_check.length; j++) {
+            boolean flag = false;
+            for (int i = 2; i <= no_to_check[j] / 2; ++i) {
+                if (no_to_check[j] % i == 0) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag) {
+                System.out.println(no_to_check[j] + " is prime number");
+                count2 += 1;
+            } else {
+                System.out.println(no_to_check[j] + " is not prime number");
+            }
+        }
+        System.out.println("There are " + count2 + " prime numbers");
+        System.out.println("There are " + (no_to_check.length - count2) + " non prime numbers");
+    }
+}
+
+class mainclass {
+
+    public static void main(String[] args) {//main fxn
+        Scanner sc = new Scanner(System.in);//declaring scanner class for taking input from user
+        while (true) {
+            int ch;
+            System.out.println("Enter your choice:");
+            System.out.println("Press: \n1.String \n2.Integer \n3.To exit");
+            ch = sc.nextInt();
+            switch (ch) {
+                case 1://for checking palindrome
+                    int no_strings;
+                    template<String> s1 = new template<String>();
+                    System.out.println("Enter the number of elements:");
+                    no_strings = sc.nextInt();
+                    String[] stringset = new String[no_strings];
+                    for (int i = 0; i < no_strings; i++) {
+                        System.out.println("Enter element "+(i+1)+":");
+                        stringset[i] = sc.next();
+                    }
+                    s1.palindrome(stringset);
+                    break;
+                case 2:
+                    template<Integer> i1 = new template<Integer>();
+                    System.out.println("Enter the number of elements:");
+                    int no_integers = sc.nextInt();
+                    int[] integerset = new int[no_integers];
+                    for (int i = 0; i < no_integers; i++) {
+                        System.out.println("Enter element "+(i+1)+":");
+                        integerset[i] = sc.nextInt();
+                    }
+
+                    while (true) {
+                        int ch2;
+                        System.out.println("Enter your choice:");
+                        System.out.println("Press: \n1 for check_odd_even \n2 check_prime \n3.To exit");
+
+                        ch2=sc.nextInt();
+
+                        switch (ch2){
+                            case 1://checking for odd and even
+                                i1.check_odd_even(integerset);
+                                break;
+                            case 2://checking for prime
+                                i1.check_prime(integerset);
+                                break;
+                            case 3://for exit of program
+                                System.out.println("Exiting the application...");
+                                System.exit(0);
+                                break;
+                        }
+                    }
+                case 3://for exit of program
+                    System.out.println("Exiting the application...");
+                    System.exit(0);
+                    break;
+            }
+        }
+    }
+}
+
+
+/*
+Enter your choice:
+Press:
+1.String
+2.Integer
+3.To exit
+
+1
+
+Enter the number of elements:
+4
+Enter element 1:
+r
+Enter element 2:
+f
+Enter element 3:
+f
+Enter element 4:
+r
+
+palindrome string
+
+Enter your choice:
+Press:
+1.String
+2.Integer
+3.To exit
+
+2
+
+Enter the number of elements:
+4
+Enter element 1:
+7
+Enter element 2:
+5
+Enter element 3:
+6
+Enter element 4:
+9
+
+Enter your choice:
+Press:
+1 for check_odd_even
+2 check_prime
+3.To exit
+
+1
+
+7 is odd
+5 is odd
+6 is even
+9 is odd
+There are 1 even numbers
+There are 3 odd numbers
+
+Enter your choice:
+Press:
+1 for check_odd_even
+2 check_prime
+3.To exit
+
+2
+
+7 is prime number
+5 is prime number
+6 is not prime number
+9 is not prime number
+There are 2 prime numbers
+There are 2 non prime numbers
+
+Enter your choice:
+Press:
+1 for check_odd_even
+2 check_prime
+3.To exit
+
+3
+
+Exiting the application...
+
+Process finished with exit code 0
+
+ */

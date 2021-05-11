@@ -1,0 +1,118 @@
+Enter your choice:
+Press: 
+1 for Programmer 
+2 for Assistant Project Manager 
+3 for Project Manager 
+4 for Team Leader
+1
+Enter basic pay for employee at Programmer's designation:
+10000
+Enter name:
+a
+Enter employee id:
+1
+Enter your full address:
+aaa
+Enter mobile no:
+111
+
+Displaying employee details...
+Employee name:a
+Employee id:1
+Designation at organization: Programmer
+Employee full address:aaa
+Employee mobile no:111
+your basic pay is:10000.0
+your gross salary is:20700.0
+your net salary is:19490.0
+
+Enter your choice:
+Press: 
+1 for Programmer 
+2 for Assistant Project Manager 
+3 for Project Manager 
+4 for Team Leader
+2
+Enter basic pay for employee at Assistant Project Manager's designation:
+2000
+Enter name:
+ss
+Enter employee id:
+2
+Enter your full address:
+ee
+Enter mobile no:
+3333
+
+Displaying employee details...
+Employee name:ss
+Employee id:2
+Designation at organization: Programmer
+Employee full address:ee
+Employee mobile no:3333
+your basic pay is:2000.0
+your gross salary is:4140.0
+your net salary is:3898.0
+
+Enter your choice:
+Press: 
+1 for Programmer 
+2 for Assistant Project Manager 
+3 for Project Manager 
+4 for Team Leader
+3
+Enter basic pay for employee at Project Manager's designation:
+1000
+Enter name:
+fe
+Enter employee id:
+3
+Enter your full address:
+fcjb
+Enter mobile no:
+8966
+
+Displaying employee details...
+Employee name:fe
+Employee id:3
+Designation at organization: Programmer
+Employee full address:fcjb
+Employee mobile no:8966
+your basic pay is:1000.0
+your gross salary is:2070.0
+your net salary is:1949.0
+
+Enter your choice:
+Press: 
+1 for Programmer 
+2 for Assistant Project Manager 
+3 for Project Manager 
+4 for Team Leader
+4
+Enter basic pay for employee at Team Leader's designation:
+11000
+Enter name:
+jhxuh
+Enter employee id:
+6
+Enter your full address:
+kiuf
+Enter mobile no:
+67668
+
+Displaying employee details...
+Employee name:jhxuh
+Employee id:6
+Designation at organization: Programmer
+Employee full address:kiuf
+Employee mobile no:67668
+your basic pay is:11000.0
+your gross salary is:22770.0
+your net salary is:21439.0
+
+Enter your choice:
+Press: 
+1 for Programmer 
+2 for Assistant Project Manager 
+3 for Project Manager 
+4 for Team Leader

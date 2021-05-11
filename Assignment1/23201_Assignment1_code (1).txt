@@ -1,0 +1,109 @@
+//Abhishek 23201
+import java.util.Scanner;
+import java.math.*;
+public class complex
+{
+    double real, img; //for taking real part and imaginary
+
+    complex()//default constructor
+    {
+        this.real=0;
+        this.img=0;
+    }
+   complex(double r, double i)//parameterised constructor 
+   {
+	this.real = r;
+	this.img = i;
+   }
+
+   public static complex sum(complex c1, complex c2)
+   {
+        complex result = new complex();
+
+        result.real = c1.real + c2.real;
+        result.img = c1.img + c2.img;
+        return result;
+    }
+    public static complex diff(complex c1, complex c2)
+   {
+        complex result = new complex();
+
+        result.real = c1.real - c2.real;
+        result.img = c1.img - c2.img;
+        return result;
+    }
+    public static complex prod(complex c1, complex c2)
+   {
+        complex result = new complex();
+
+        result.real = c1.real*c2.real-c1.img*c2.img;
+        result.img = c1.img *c2.real+ c2.img*c1.real;
+        return result;
+    }
+    public static complex div(complex c1, complex c2)
+   {
+        complex result = new complex();
+        double p=(c1.real*c2.real + c1.img*c2.img);
+        result.real = (c1.real*c2.real+c1.img*c2.img)/p;
+        result.img = (c1.img *c2.real- c2.img*c1.real)/p;
+        return result;
+    }
+
+    public static void main(String args[]) 
+    {
+        
+        double a,b,c,d;
+        System.out.println("Enter Real And Imaginary Part of first complex number");
+        Scanner sc = new Scanner(System.in);
+        a= sc.nextDouble();  
+        b= sc.nextDouble();  
+        System.out.println("Enter Real And Imaginary Part of second complex number");
+        c= sc.nextDouble();  
+        d= sc.nextDouble();  
+        sc.close();
+        complex c1 = new complex(a,b);
+        complex c2 = new complex(c,d);
+        complex temp = complex.sum(c1, c2);
+        System.out.println("Sum is: "+ temp.real+" + "+ temp.img +"i");
+        complex temp1 = complex.diff(c1, c2);
+        System.out.println("Diffrence is: "+ temp1.real+" + "+ temp1.img +"i");
+        complex temp2 = complex.prod(c1, c2);
+        System.out.println("Product is: "+ temp2.real+" + "+ temp2.img +"i");
+        complex temp3 = complex.div(c1, c2);
+        System.out.println("Division is: "+ temp3.real+" + "+ temp3.img +"i");
+        
+    }
+}
+
+/* OUTPUT
+Enter Real And Imaginary Part of first complex number
+12
+13
+Enter Real And Imaginary Part of second complex number
+19
+14
+Sum is: 31.0 + 27.0i
+Diffrence is: -7.0 + -1.0i
+Product is: 46.0 + 415.0i
+Division is: 1.0 + 0.1926829268292683i
+
+Enter Real And Imaginary Part of first complex number
+1
+2
+Enter Real And Imaginary Part of second complex number
+3
+4
+Sum is: 4.0 + 6.0i
+Diffrence is: -2.0 + -2.0i
+Product is: -5.0 + 10.0i
+Division is: 1.0 + 0.18181818181818182i
+
+Enter Real And Imaginary Part of first complex number
+13 45
+Enter Real And Imaginary Part of second complex number
+3 87
+Sum is: 16.0 + 132.0i
+Diffrence is: 10.0 + -42.0i
+Product is: -3876.0 + 1266.0i
+Division is: 1.0 + -0.251896813353566i
+ */

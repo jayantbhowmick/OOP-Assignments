@@ -1,0 +1,408 @@
+=========================
+  Welcome to the Store !
+=========================
+Enter the number of books in the store :
+2
+Enter book details : 
+
+Enter the title : 
+Data Structures
+Enter the price : 
+700
+Enter no of copies : 
+5
+Enter the author of the book: 
+Abhi
+
+Enter the title : 
+Algorithms
+Enter the price : 
+600
+Enter no of copies : 
+10
+Enter the author of the book: 
+Dhar
+
+=========================
+Books : 
+
+Title: Data Structures
+Price: 700.0
+Copies available : 5
+Author : Abhi
+
+Title: Algorithms
+Price: 600.0
+Copies available : 10
+Author : Dhar
+
+=========================
+Enter the number of magazines in the store :
+2
+Enter magazine details : 
+
+Enter the title : 
+outlook
+Enter the price : 
+100
+Enter no of copies : 
+4
+
+Enter the title : 
+Cricbuzz
+Enter the price : 
+40
+Enter no of copies : 
+10
+
+=========================
+Magazines : 
+
+Title: outlook
+Price: 100.0
+Copies available : 4
+
+Title: Cricbuzz
+Price: 40.0
+Copies available : 10
+
+=========================
+=========================
+Transactions : 
+
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+4
+=========================
+Books Available : 
+
+Title : Data Structures
+Author : Abhi
+Price : 700.0
+Copies available : 5
+
+Title : Algorithms
+Author : Dhar
+Price : 600.0
+Copies available : 10
+
+=========================
+Magazines Available : 
+
+Title : outlook
+Price : 100.0
+Copies available : 4
+
+Title : Cricbuzz
+Price : 40.0
+Copies available : 10
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+1
+=========================
+1)Add copies to existing books.
+2)Add a new book. 
+3)Exit
+=========================
+1
+Enter the title of book: 
+Algorithms
+Enter the number of copies to be added: 
+100
+=============================
+Copies added!
+=============================
+=========================
+1)Add copies to existing books.
+2)Add a new book. 
+3)Exit
+=========================
+2
+Enter the number of books to be ordered: 
+1
+
+Enter the title : 
+ML
+Enter the price : 
+1000
+Enter no of copies : 
+3
+Enter the author of the book: 
+Abhishek
+
+=========================
+Book added!
+=========================
+=========================
+1)Add copies to existing books.
+2)Add a new book. 
+3)Exit
+=========================
+3
+=========================
+The books available in the store are : 
+
+Title: Data Structures
+Price: 700.0
+Copies available : 5
+Author : Abhi
+
+Title: Algorithms
+Price: 600.0
+Copies available : 110
+Author : Dhar
+
+Title: ML
+Price: 1000.0
+Copies available : 3
+Author : Abhishek
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+4
+=========================
+Books Available : 
+
+Title : Data Structures
+Author : Abhi
+Price : 700.0
+Copies available : 5
+
+Title : Algorithms
+Author : Dhar
+Price : 600.0
+Copies available : 110
+
+Title : ML
+Author : Abhishek
+Price : 1000.0
+Copies available : 3
+
+=========================
+Magazines Available : 
+
+Title : outlook
+Price : 100.0
+Copies available : 4
+
+Title : Cricbuzz
+Price : 40.0
+Copies available : 10
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+2
+=========================
+1)Add copies to existing magazines.
+2)Add a new magazine. 
+3)Exit
+=========================
+1
+Enter the title of magazine: 
+outlook
+Enter the number of copies to be added: 
+200
+=============================
+Copies added!
+=============================
+=========================
+1)Add copies to existing magazines.
+2)Add a new magazine. 
+3)Exit
+=========================
+2
+Enter the number of magazines to be ordered: 
+1
+
+Enter the title : 
+Times of india
+Enter the price : 
+60
+Enter no of copies : 
+4
+
+=========================
+1)Add copies to existing magazines.
+2)Add a new magazine. 
+3)Exit
+=========================
+3
+=========================
+The magazines available in the store are : 
+
+Title: outlook
+Price: 100.0
+Copies available : 204
+
+Title: Cricbuzz
+Price: 40.0
+Copies available : 10
+
+Title: Times of india
+Price: 60.0
+Copies available : 4
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+4
+=========================
+Books Available : 
+
+Title : Data Structures
+Author : Abhi
+Price : 700.0
+Copies available : 5
+
+Title : Algorithms
+Author : Dhar
+Price : 600.0
+Copies available : 110
+
+Title : ML
+Author : Abhishek
+Price : 1000.0
+Copies available : 3
+
+=========================
+Magazines Available : 
+
+Title : outlook
+Price : 100.0
+Copies available : 204
+
+Title : Cricbuzz
+Price : 40.0
+Copies available : 10
+
+Title : Times of india
+Price : 60.0
+Copies available : 4
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+3
+=========================
+What do you want to buy : 
+1)Books 
+2)Magazines 
+3)Exit
+=========================
+1
+How many books do you want to buy : 
+1
+
+Enter Title : 
+ML
+Enter quantity : 
+2
+
+Order placed!
+=========================
+Total Book sales : 2000.0$
+=========================
+=========================
+What do you want to buy : 
+1)Books 
+2)Magazines 
+3)Exit
+=========================
+2
+How many magazines do you want to buy : 
+1
+
+Enter Title : 
+outlook
+Enter quantity : 
+2
+
+Sorry! The magazine is out of stock.
+=========================
+Total Magazine sell : 200.0$
+=========================
+=========================
+What do you want to buy : 
+1)Books 
+2)Magazines 
+3)Exit
+=========================
+3
+=========================
+Total Publication sell : 2000.0200.0$
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
+4
+=========================
+Books Available : 
+
+Title : Data Structures
+Author : Abhi
+Price : 700.0
+Copies available : 5
+
+Title : Algorithms
+Author : Dhar
+Price : 600.0
+Copies available : 110
+
+Title : ML
+Author : Abhishek
+Price : 1000.0
+Copies available : 1
+
+=========================
+Magazines Available : 
+
+Title : outlook
+Price : 100.0
+Copies available : 202
+
+Title : Cricbuzz
+Price : 40.0
+Copies available : 10
+
+Title : Times of india
+Price : 60.0
+Copies available : 4
+
+=========================
+1)Order new books 
+2)Order new magazines 
+3)Sell books and magazines 
+4)Check stock 
+5)Exit
+=========================
