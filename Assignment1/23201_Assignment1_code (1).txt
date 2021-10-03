@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.math.*;
 public class complex
 {
-    double real, img; //for taking real part and imaginary
+    double real, img,imp; //for taking real part and imaginary
 
     complex()//default constructor
     {
