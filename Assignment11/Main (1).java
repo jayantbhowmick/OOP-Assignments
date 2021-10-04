@@ -3,7 +3,7 @@
 //E-10
 //Strategy Design Pattern
 
-
+//Java is a robust language
 
 package Assignmets;
 
@@ -17,6 +17,7 @@ public class Main {
         System.out.print("Enter number of accounts: ");
         int n = scanner.nextInt();
         int i;
+        int abhishek=0,dhar=0;
 
         for(i = 0; i < n; i++) {
             accountObject[i] = new Accounts();
@@ -46,6 +47,8 @@ public class Main {
                 // Here we have got correct pin and username
 
                 while(true) {
+                    abhishek++;
+                    dhar++;
 
                 int choice;
                 System.out.println("""
