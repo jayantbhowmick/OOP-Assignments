@@ -3,7 +3,7 @@ from .form import StudentRegistration
 from .models import User
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-# Create your views here.
+# Create your views here.  Create your views here.
 def home(request):
     fm=StudentRegistration()
     stud=User.objects.all()
